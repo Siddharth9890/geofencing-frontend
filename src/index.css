@@ -1,0 +1,141 @@
+/* Global Styles */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Google Maps Styles */
+.gm-style {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif !important;
+}
+
+.gm-style-iw {
+  max-width: 300px !important;
+}
+
+.gm-style-iw-d {
+  overflow: hidden !important;
+}
+
+/* Custom Map Controls */
+.map-control-button {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.3);
+  cursor: pointer;
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 38px;
+  margin: 8px 0 22px;
+  outline: none;
+  padding: 0 5px;
+  text-align: center;
+  color: rgb(25,25,25);
+}
+
+.map-control-button:hover {
+  background-color: #ebebeb;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Loading Animation */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading {
+  animation: pulse 2s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .MuiContainer-root {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  
+  .MuiCard-root {
+    margin-bottom: 12px !important;
+  }
+}
+
+/* Map Container */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Asset Marker Animation */
+@keyframes markerPulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.asset-marker {
+  animation: markerPulse 2s infinite;
+}
+
+/* Alert Badge */
+.alert-badge {
+  position: relative;
+  overflow: visible;
+}
+
+.alert-badge::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background-color: #f44336;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
