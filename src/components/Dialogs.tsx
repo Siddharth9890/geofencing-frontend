@@ -127,9 +127,6 @@ const DialogsContainer: React.FC<DialogsContainerProps> = ({
             SelectProps={{ native: true }}
           >
             <option value="vehicle">Vehicle</option>
-            <option value="person">Person</option>
-            <option value="drone">Drone</option>
-            <option value="equipment">Equipment</option>
           </TextField>
           {newAsset.position && (
             <Box sx={{ p: 1, bgcolor: "grey.100", borderRadius: 1, mb: 2 }}>
@@ -185,16 +182,7 @@ const DialogsContainer: React.FC<DialogsContainerProps> = ({
             }
             sx={{ mb: 2 }}
           />
-          <TextField
-            margin="dense"
-            label="Color"
-            type="color"
-            value={newGeofence.color}
-            onChange={(e) =>
-              onUpdateGeofence((prev) => ({ ...prev, color: e.target.value }))
-            }
-            sx={{ mb: 2 }}
-          />
+          
           <FormControlLabel
             control={
               <Switch
