@@ -108,4 +108,4 @@ The map is configured for Pune, India by default. You can change the center and 
 ### API Integration
 Update the API base URL in your `.env` file to connect to your backend.
 
-**Demo Link**: [Add your deployed application URL here]
+**Demo Link**: https://geofencing-frontend.vercel.app/
